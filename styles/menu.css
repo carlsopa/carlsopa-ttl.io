@@ -1,0 +1,154 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    left:0;
+    height:100vh;
+    width:100vw;
+    z-index:1;
+}
+nav input{
+    position: absolute;
+    top:0;
+    left:0;
+    width:40px;
+    height: 40px;
+    z-index: 2;
+    opacity:0;
+}
+/* create the toggle box for the user to click */
+nav .hamburger{
+    position: absolute;
+    top:0;
+    left:0;
+    width:50px;
+    height:50px;
+    padding:1rem;
+    background-color: green;
+    z-index:1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* create the three lines that will turn into an 'x' */
+nav .hamburger > div{
+    position: relative;
+    width:100%;
+    height:2px;
+    background: #fff;
+    transition: all .4s ease;
+}
+nav .hamburger div:before,
+nav .hamburger div:after{
+    content: '';
+    position: absolute;
+    top:-10px;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    z-index: 1;
+}
+nav .hamburger  div:after{
+    top:10px;
+}
+/* transform three lines into an x */
+nav input:checked + .hamburger > div{
+    transform: rotate(135deg);
+}
+nav input:checked + .hamburger div:after,
+nav input:checked + .hamburger div:before{
+  top: 0;
+  transform: rotate(90deg);
+}
+/* show and design the menu on click */
+nav input:checked ~ .nav_bar{
+    visibility: visible;
+}
+/* style the menu bar */
+.nav_bar{
+    position: fixed;
+    top:0;
+    left:0;
+    max-height: 0vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    visibility: hidden;
+    overflow: hidden;
+    transition: max-height .8s ease-out;
+    background-color: paleturquoise;
+}
+.nav_bar ul li{
+    list-style: none;
+    padding: 1rem;
+}
+nav input:checked ~.nav_bar{
+    background-color: paleturquoise;
+    max-height:100vh;
+}
+@media screen and (min-width:700px){
+    
+    nav .hamburger{
+        display:none;
+    }
+    nav {
+        position: sticky;
+        top:0px;
+        height: auto;
+        width:auto;
+    }
+    nav .nav_bar{
+        display: block;
+        margin: 0 auto;
+        width:50%;
+        position: unset;
+        visibility: visible;
+        overflow: visible;
+        padding: 5px 0px 20px 0px;
+        background-color: transparent;
+    }
+    nav .nav_bar ul {
+        /* padding:10px; */
+        padding-bottom: 10px;
+    }
+    nav{
+        margin-bottom: 10px;;
+    }
+    nav .nav_bar ul li{
+        display: inline;
+    }
+
+    nav .nav_bar ul li.mobile{
+        display: none;
+    }
+    .nav_bar ul li a{
+        position: relative;
+        text-decoration: none;
+    }
+    nav .nav_bar ul li a:before{
+        content:'';
+        position: absolute;
+        width:100%;
+        height:2px;
+        bottom:0;
+        left:0;
+        background-color:red;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all .3s ease-in-out;
+    }
+    .nav_bar ul li a:hover:before{
+        visibility: visible;
+        transform: scaleX(1);
+    }
+    .nav_bar ul li.Active_Link{
+        transform:scaleX(1);
+        color:white;
+    }
+    
+}
