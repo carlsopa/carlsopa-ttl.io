@@ -9,13 +9,21 @@ body{
     /* font-size:100%; */
     font-family:'Roboto',sans-serif;
     padding:5px 10px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
 }
+
 h2{
     font-size:1.8rem;
-    font-family: 'Cedarville Cursive',cursive;
+    font-family: 'Sofia',cursive;
+    text-align: center;
+    /* display: block; */
 }
 li{
     list-style-type: none;
+}
+img{
+    width:100%;
 }
 /* the sales banner at the top of the page */
 #event{
@@ -57,9 +65,14 @@ section{
 }
 section div{
     font-size: 1.3rem;
+    line-height:1.25;
 }
 section:first-of-type{
     margin-top:20px;
+    
+}
+section h2{
+    /* text-align:center; */
 }
 footer{
     display:grid;
@@ -82,19 +95,10 @@ section img{
     header{
         width:100%;
         height:100%;
-        background: url(../images/ballet-3898440_640.jpg);
-        background-size: cover;
+
         /* background-position: center; */
         position: relative;
         /* display: flex; */
-    }
-    .overlay{
-        position: absolute;
-        height:100%;
-        width: 100%;
-        background: #57085e;
-        opacity: 0.8;
-        /* z-index:-1; */
     }
     #banner{
         position: relative;
@@ -108,12 +112,12 @@ section img{
     #account{
         display: block;
         float:right;
-        color:#fff;
+        /* color:#fff; */
         position: relative;
     }
     .contact{
         font-weight: 900;
-        color:#fff;
+        /* color:#fff; */
     }
     section:first-of-type img{
         float:left;
@@ -128,7 +132,7 @@ section img{
         padding-bottom: 25px;
     }
     h2{
-        display: inline;
+        /* display: inline; */
     }
     section div{
         font-size:1.3rem;
