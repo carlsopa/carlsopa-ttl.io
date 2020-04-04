@@ -11,6 +11,10 @@ body{
     overflow-wrap: break-word;
     word-wrap: break-word;
 }
+h2{
+  font-family: "sofia";
+  color: rgb(150, 134, 235);
+}
 #event{
   position: relative;
   z-index: 4;
@@ -323,6 +327,12 @@ footer {
     body{
         font-size:1.5rem;
     }
+  h2{
+    font-weight: 400;
+letter-spacing: .2rem;
+    font-size:3.5rem;
+    padding-bottom: 2rem;
+  }
     header{
         display: grid;
         grid-template-rows: auto auto auto;
@@ -367,6 +377,8 @@ footer {
   .text h2{
     grid-row: 1;
     grid-column: 1/span2;
+    font-family: "sofia";
+    color: rgb(150, 134, 235);
   }
   
   .text img{

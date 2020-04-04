@@ -84,6 +84,7 @@ nav {
       margin: 0 auto;
       color: rgb(247,247,247);
       transition: color .3s ease;
+      text-transform: uppercase;
   }
   .nav_bar a:hover{
       color: rgb(162,146,244);
@@ -113,6 +114,7 @@ nav {
       }
       nav .nav_bar ul {
           padding-bottom: 10px;
+          
       }
       nav {
           margin-bottom: 10px;
@@ -120,6 +122,7 @@ nav {
       nav .nav_bar ul li{
           display: inline;
           border:0px;
+          padding: 1rem 10px 1rem 10px;
       }
       nav .nav_bar ul li.mobile{
           display: none;
@@ -130,6 +133,7 @@ nav {
           display: inline;
           color: #7030a1;
           transition: color .3s ease;
+          text-transform: uppercase;
       }
       nav .nav_bar ul li a:hover{
           color:rgb(162,146,244);
@@ -137,7 +141,7 @@ nav {
   }
 @media screen and (min-width:1100px) {
     nav .nav_bar{
-        width:54%;
+        width:76%;
     }
     .nav_bar ul li {
         /*! padding: 1rem 1rem 1rem 1rem; */
