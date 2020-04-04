@@ -11,36 +11,12 @@
         <!-- <link rel="stylesheet" href='../styles/a.css'> -->
     </head>
     <body>
-        <div class='modal' id='modal-email'>
-            <div class='modal-dialog'>
-                <div class='modal-header'>
-                    <h2>Stay in-formed, sign up today</h2>
-                    <a href='#modal-email' class='modal-close'>x</a>
-                </div>
-                <img src='../images/grayscale-photography-of-girl-doing-ballet-591679.jpg'/>
-                <div class='modal-body'>
-                    Sign up for our mailing list to keep up to date on the last sales and events that are offering at Toe The Line.
-                    <form>
-                        <label id='FirstName'>First Name:
-                            <input type='text'  placeholder="First Name"/>
-                        </label>
-                        <label id='LastName'>Last Name:
-                            <input type='text'  placeholder="Last Name"/>
-                        </label>
-                        <label id='Email'>Email:
-                            <input type='email' placeholder="Email"/>
-                        </label>
-                        <button id='SubmitButton'>Subscribe</button>
-                    </form>
-                </div>
-            </div>
-        </div>
         <div id='event'>
             Due to the current Novel Coreno-19 outbreak, we will be closed till further notice
         </div>
         <div class="sticky">
             <header>
-                <div id='account'>My Account/<a href='signup.html'>Register</a></div>
+                <div id='account'>My Account/<a href='#'>Register</a></div>
                     <div id='logo'>
                         <img id='logoa' src='../images/Toe-The-Line-logo-transparent.png'/>
                     </div>
@@ -81,25 +57,26 @@
                 </div>
             </nav>
         </div>
-        <main id='mainSection'>
-            <section class='text' id='FirstSection'>
-                <!-- <img src='../images/photo-of-person-wearing-ballet-shoes-3587321.jpg'/> -->
-            <h2>Welcome to Toe The Line!</h2>
-            <img src='../images/outside.png'/>
-            <div class='SectionText'>Toe The Line dance boutique specializes in all your dancing needs.  From shoes to tutu's you will find it all at Toe The Line.  Located in Buffallo Grove we have spent tireless hours looking for the best brands in dance and appearal.  We found those brands and now we can offer them to you.</div>
-            </section>
-            <section class='text'>
-            <h2>Local Retail for local shoppers</h2>
-            <img src='../images/shop.png'/>
-            <div class='SectionText'>While we pride ourselves on offer name brand products at unbeatable prices to ship cross country, at the end of the day we are your neighborhood brick and mortar dance store.  Being a neighborhood store we also pride ourselves on the connection that we have made with our local dance studios.  SO make sure to check out the community calendar of up-coming events as well as our dance school page to find out who is in the area and what they are doing.</div>
-            </section>
-            
-            <section id='sales'>
-                <h2>Hot Buys</h2>
-                <div>
-                Make sure to check out these hot buys before they disapear
-                </div>
-            </section>
+        <main class='AccountForm' id='mainSection'>
+            <h2 id='AccountH2'>Create Account</h2>
+            By signing up you may receive exclusive rewards and news by email
+            <form id='EnrollForm'>
+                <label>First Name:<br/>
+                    <input type='text' name='FirstName' placeholder="First Name"/>
+                </label><br/>
+                <label>Last Name:<br/>
+                    <input type='text' name='LastName' placeholder="Last Name"/>
+                </label><br/>
+                <label>Email:<br/>
+                    <input type='email' name='Email' placeholder="Email">
+                </label><br/>
+                <label>Phone:<br/>
+                    <input type='tel' placeholder="Telephone (optional)">
+                </label><br/>
+                <button type='submit'>Create Account</button>
+            </form>
+            <span>Already have an account? <a href='signin.html'>Sign In</a></span>
+
         </main>
         <footer>
             <div id='social-media'>

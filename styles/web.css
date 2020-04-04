@@ -256,7 +256,7 @@ footer {
   grid-template-columns: auto auto;
     gap:15px;
   }
-  form label{
+  . modal-body form label{
     font-size:.8rem;
   }
   #FirstName{
@@ -275,6 +275,49 @@ footer {
     gird-row:3;
     grid-column:1/span2;
   }
+  .AccountForm{
+    width:800px;
+    margin:0 auto;
+  }
+  #AccountH2{
+    width:60%;
+    margin:0 auto;
+    padding-bottom: 0rem;
+  }
+  #EnrollForm{
+    width:50%;
+    margin: 0 auto;
+  }
+  #EnrollForm input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom:10px;
+    font-size:1.3rem;
+    color:#aeaeae;
+  }
+  #EnrollForm label{
+    font-size: .9rem;
+  }
+  #EnrollForm button{
+    background-color: rgb(162, 146, 244);
+    border:0;
+    padding:15px 10px;
+    font-size: 1.3rem;
+    border-radius:10px;
+    margin:0 auto;
+    width:50%;
+    position: relative;
+    left: 25%;
+  }
+  .AccountForm span{
+    display: inline-block;
+    font-size: .9rem;
+    width:29%;
+    /*! margin-left: auto; */
+    /*! margin-right: auto; */
+    position: relative;
+    left: 38%;
+  }
   #logoa{
 /*     margin-left:0%; */
   }
@@ -290,6 +333,8 @@ footer {
     width: 90%;
     grid-row: 3;
     grid-column: 1/span 3;
+    margin-top: -20px;
+    margin-bottom: 20px;
   }
   section{
 /*     font-size: 1.3rem; */
