@@ -5,53 +5,70 @@
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>Toe The Line-Dancing Boutique</title>
         <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
         <link rel="stylesheet" href='../styles/web.css'>
         <link rel="stylesheet" href='../styles/menu.css'>
-        <link rel="stylesheet" href="../styles/lightslider.css">
-        <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        <!-- <link rel="stylesheet" href='../styles/a.css'> -->
     </head>
     <body>
+        
+
+        </div>
         <div id='event'>
             Current Promotion
         </div>
-        <header>
-            <div class='overlay'></div>
-            <div id='account'>My Account/Register</div>
-            <div id='banner'>
-                <div id='logo'>
-                    <img id='logoa' src='../images/Toe-The-Line-logo-transparent.png'/>
+        <div class="sticky">
+            <header>
+                <div id='account'>My Account/Register</div>
+                    <div id='logo'>
+                        <img id='logoa' src='../images/Toe-The-Line-logo-transparent.png'/>
+                    </div>
+                    <div class='contact' id='contact'>
+                        <span id='address'>302 McHenry Road, Buffalo Grove, Illinois 60089</span>
+                        <span id='phone'>(847) 353-8800</span>
+                        <span id='email'>info@dancingwithtoetheline.live</span>
+                    </div>
+                
+            </header>
+            <nav>
+                <input type="checkbox" name="" id="box">
+                <div class="hamburger"><div></div></div>
+                <div class="nav_bar action">
+                    <ul>
+                        <li class='mobile'><input type='text'></li>
+                        <li class='mobile'><a href='#'>Sign-up</a></li>
+                        <li class='mobile'><a href='#'>Login</a></li>
+                        <li class='Active_Link'><a href='index.html'>Home</a></li>
+                        <li><a href='#'>Shop</a></li>
+                        <li><a href='#'>Fitting Appointments</a></li>
+                        <li><a href='schools.html'>Dance Studios</a></li>
+                        <li><a href='about.html'>About Us</a></li>
+                        <li><a href='contact.html'>contact Us</a></li>
+                        <li><a href='photos.html'>Photography</a></li>
+                    </ul>
                 </div>
-                <div class='contact' id='contact'>
-                    <span id='address'>302 McHenry Road, Buffalo Grove, Illinois 60089</span><br/>
-                    <span id='phone'>(847) 353-8800</span><br/>
-                    <span id='email'>info@dancingwithtoetheline.live</span>
-                </div>
-            </div>
-        </header>
-        <nav>
-            <input type="checkbox" name="" id="box">
-            <div class="hamburger"><div></div></div>
-            <div class='nav_bar'>
-                <ul>
-                    <li class='mobile'><input type='text'></li>
-                    <li class='mobile'><a href='#'>Sign-up</a></li>
-                    <li class='mobile'><a href='#'>Login</a></li>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='#'>Shop</a></li>
-                    <li><a href='#'>Fitting Appointments</a></li>
-                    <li class='Active_Link'><a href='schools.html'>Dance Studios</a></li>
-                    <li><a href='about.html'>About Us</a></li>
-                    <li><a href='contact.html'>contact Us</a></li>
-                    <li><a href='#'>Photography</a></li>
-                </ul>
-            </div>
-        </nav>
-        <main>
+            </nav>
+        </div>
+        <main id='mainSection'>
             <section>
-                <h2>Movement & Sound Dance LLC</h2>
-                <div class='School_Logo'></div>
+                <div id="SchoolName">
+                    <h2>Movement & Sound Dance LLC</h2>
+                    <div class='School_Logo'></div>
+                </div>
                 <div class='School_Contact'>
-                    <span class='School_WebSite'><a href='http://www.movementandsounddance.com'>http://www.movementandsounddance.com</a></span>
+                    <span class='School_WebSite'>
+                        <a href='http://www.movementandsounddance.com'>
+                            http://www.movementandsounddance.com
+                        </a>
+                    </span>
+                    <span class='School_Phone_Number'>
+                        
+                    </span>
+                    <span class='School_Email'>
+                        <a href=''>
+                            
+                        </a>
+                    </span>
                 </div>
                 <div class='School_About'>Movement & Sound Dance LLC is a unique dance school where technique, artistry, and community come together. We work to create a safe, genuinely supportive, and highly creative atmosphere where students of all ages and skill levels can discover or re-discover dance as a positive influence. Classes at Movement & Sound are joyful, both silly and serious, and reflect each instructor's passion for their craft, for teaching children, and his or her individual artistic background.</div>
                 <div class='School_Instructors'>
@@ -66,6 +83,7 @@
 
                     </ul>
                 </div>
+            </section>
                 <div class="main-carousel">
                         <img class='carousel-cell' src="https://sachinchoolur.github.io/lightslider/img/cS-1.jpg"/> 
 
@@ -78,43 +96,91 @@
                         <img class='carousel-cell' src="https://sachinchoolur.github.io/lightslider/img/cS-5.jpg"/>
                 </div>
                 
-            </section>
+            <!-- </section> -->
             <section>
-                <h2>Studio 83 Dance Academy</h2>
-                <div class='School_Logo'>
-                    <!-- <img src='http://bgparks.org/images/logos/STUDIO83_DA_FULL_web5.png'/> -->
+                <div id="SchoolName">
+                    <h2>Studio 83 Dance Academy</h2>
+                    <div class='School_Logo'>
+                        <!-- <img src='http://bgparks.org/images/logos/STUDIO83_DA_FULL_web5.png'/> -->
+                    </div>
                 </div>
                 <div class='School_Contact'>
-                    <span class='School_WebSite'><a href='http://bgparks.org/program/dance.aspx'>http://bgparks.org/program/dance.aspx</a></span>
-                    <span class='School_Phone_Number'>847.850.2151</span>
-                    <span class='School_Email'><a href='mailto:mplewacki@bgparks.org'>Maddie Plewacki</a></span>
-                    
-
+                    <span class='School_WebSite'>
+                        <a href='http://bgparks.org/program/dance.aspx'>
+                            http://bgparks.org/program/dance.aspx
+                        </a>
+                    </span>
+                    <span class='School_Phone_Number'>
+                        847.850.2151
+                    </span>
+                    <span class='School_Email'>
+                        <a href='mailto:mplewacki@bgparks.org'>
+                            Maddie Plewacki
+                        </a>
+                    </span>
                 </div>
-                <div class='School_About'>Studio 83 Dance Academy is pleased to offer the community high quality, curriculum based dance instruction from professionally trained teachers, with the low cost associated with a park district. We have 4 fully equipped studios with sprung floors, a warm and welcoming waiting area, and a full selection of classes for ages 2 - adult. We invite you all to become a part of our dance family!</div>
-                <div class='School_Instructors'>
-                    Meet some of our instructors<br/>
-                    <ul>
-                        <li>Maddie Plewacki</li>
-                        <li>Aly Stanczak</li>
-                        <li>Laura Biernacki</li>
-                        <li>Jen Byrd-Alvarado</li>
-                        <li> Melissa Gocek</li>
-                        <li>Gini Griffin</li>
-                        <li> Kathryn Lahey</li>
-                    </ul>
+                <div class='School_About'>
+                    <span>
+                        Studio 83 Dance Academy is pleased to offer the community high quality, curriculum based dance instruction from professionally trained teachers, with the low cost associated with a park district. We have 4 fully equipped studios with sprung floors, a warm and welcoming waiting area, and a full selection of classes for ages 2 - adult. We invite you all to become a part of our dance family!
+                    </span>
+                    <div class='School_Instructors'>
+                        Meet some of our instructors<br/>
+                        <ul>
+                            <li>Maddie Plewacki</li>
+                            <li>Aly Stanczak</li>
+                            <li>Laura Biernacki</li>
+                            <li>Jen Byrd-Alvarado</li>
+                            <li> Melissa Gocek</li>
+                            <li>Gini Griffin</li>
+                            <li> Kathryn Lahey</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+                <div class="main-carousel">
+                    <img class='carousel-cell' src="http://bgparks.org/images/dance/dance1.jpg"/> 
+
+                    <img    class='carousel-cell' src="http://bgparks.org/images/dance/dance2.jpg"/> 
+                    
+                    <img class='carousel-cell' src="http://bgparks.org/images/dance/dance3.jpg"/>
+
+                    <img class='carousel-cell' src="http://bgparks.org/images/dance/dance4.jpg"/>
+
+                    <img class='carousel-cell' src="http://bgparks.org/images/dance/dance5.jpg"/>
+
+                    <img class='carousel-cell' src="http://bgparks.org/images/dance/dance6.jpg"/>
+
+                    <img class='carousel-cell' src="http://bgparks.org/images/dance/dance7.jpg"/>
+
+                    <img class='carousel-cell' src="http://bgparks.org/images/dance/dance8.jpg"/>
                 </div>
                 
-            </section>
+            <!-- </section> -->
+            
             <section>
-                <h2>Reverie Dance Academy</h2>
-                <div class='School_Logo'><img src=''/></div>
+                <div id="SchoolName">
+                    <h2>Reverie Dance Academy</h2>
+                    <div class='School_Logo'>
+                        <!-- <img src=''/> -->
+                    </div>
+                </div>
                 <div class='School_Contact'>
-                    <span class='School_WebSite'><a href='http://www.reveriedance.com/'>http://www.reveriedance.com/</a></span>
+                    <span class='School_WebSite'>
+                        <a href='http://www.reveriedance.com/'>
+                            http://www.reveriedance.com/
+                        </a>
+                    </span>
                     <span class='School_Address'>1157 N. Arlington Heights Road
-Buffalo Grove, Illinois 60089</span>
-<span class='School_Phone_Number'>847-215-1901</span>  
-<span class='School_Email'><a href='mailto: info@reveriedance.com'> info@reveriedance.com</a></span>                 
+                            Buffalo Grove, Illinois 60089
+                    </span>
+                    <span class='School_Phone_Number'>
+                        847-215-1901
+                    </span>  
+                    <span class='School_Email'>
+                        <a href='mailto: info@reveriedance.com'> 
+                            info@reveriedance.com
+                        </a>
+                    </span>                 
                 </div>
                 <div class='School_About'>Artistic Director Lacey Rust is an experienced, talented dance instructor who has coached and inspired hundreds of young dancers for more than a decade. Let RDA nurture your budding dancer and reintroduce experienced students to the joy and art of dance. Join Lacey and the rest of her accomplished teaching staff and become part of Reverie Dance Academy’s exciting ninth season!</div>
                 <div class='School_Instructors'>
@@ -136,9 +202,9 @@ Buffalo Grove, Illinois 60089</span>
             <div id='social-media'>
                 Follow Us:<br/>
                 
-                Facebook
-                Twitter
-                Instagram
+                <a href=''><img src="https://img.icons8.com/windows/24/000000/facebook-new.png"/></a>
+                <a href=''><img src="https://img.icons8.com/small/16/000000/twitter-circled.png"/></a>
+                <a href=''><img src="https://img.icons8.com/windows/26/000000/instagram-new.png"/></a>
                 
             </div>
             <div id='hours'>hours

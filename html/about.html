@@ -7,44 +7,46 @@
         <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href='../styles/web.css'>
         <link rel="stylesheet" href='../styles/menu.css'>
+        <!-- <link rel="stylesheet" href='../styles/a.css'> -->
+
     </head>
     <body>
         <div id='event'>
-            Current Promotion
+            Due to the current Novel Coreno-19 outbreak, we will be closed till further notice
         </div>
-        <header>
-            <div class='overlay'></div>
-            <div id='account'>My Account/Register</div>
-            <div id='banner'>
-                <div id='logo'>
-                    <img id='logoa' src='../images/Toe-The-Line-logo-transparent.png'/>
+        <div class="sticky">
+            <header>
+                <div id='account'>My Account/Register</div>
+                    <div id='logo'>
+                        <img id='logoa' src='../images/Toe-The-Line-logo-transparent.png'/>
+                    </div>
+                    <div class='contact' id='contact'>
+                        <span id='address'>302 McHenry Road, Buffalo Grove, Illinois 60089</span>
+                        <span id='phone'>(847) 353-8800</span>
+                        <span id='email'>info@dancingwithtoetheline.live</span>
+                    </div>
+                
+            </header>
+            <nav>
+                <input type="checkbox" name="" id="box">
+                <div class="hamburger"><div></div></div>
+                <div class="nav_bar action">
+                    <ul>
+                        <li class='mobile'><input type='text'></li>
+                        <li class='mobile'><a href='#'>Sign-up</a></li>
+                        <li class='mobile'><a href='#'>Login</a></li>
+                        <li class='Active_Link'><a href='index.html'>Home</a></li>
+                        <li><a href='#'>Shop</a></li>
+                        <li><a href='#'>Fitting Appointments</a></li>
+                        <li><a href='schools.html'>Dance Studios</a></li>
+                        <li><a href='about.html'>About Us</a></li>
+                        <li><a href='contact.html'>contact Us</a></li>
+                        <li><a href='photos.html'>Photography</a></li>
+                    </ul>
                 </div>
-                <div class='contact' id='contact'>
-                    <span id='address'>302 McHenry Road, Buffalo Grove, Illinois 60089</span><br/>
-                    <span id='phone'>(847) 353-8800</span><br/>
-                    <span id='email'>info@dancingwithtoetheline.live</span>
-                </div>
-            </div>
-        </header>
-        <nav>
-            <input type="checkbox" name="" id="box">
-            <div class="hamburger"><div></div></div>
-            <div class='nav_bar'>
-                <ul>
-                    <li class='mobile'><input type='text'></li>
-                    <li class='mobile'><a href='#'>Sign-up</a></li>
-                    <li class='mobile'><a href='#'>Login</a></li>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='#'>Shop</a></li>
-                    <li><a href='#'>Fitting Appointments</a></li>
-                    <li><a href='schools.html'>Dance Studios</a></li>
-                    <li class='Active_Link'><a href='about.html'>About Us</a></li>
-                    <li><a href='contact.html'>contact Us</a></li>
-                    <li><a href='#'>Photography</a></li>
-                </ul>
-            </div>
-        </nav>
-        <main>
+            </nav>
+        </div>
+        <main id='mainSection'>
             <section>
                 <h2>Quality styles and designs</h2>
                 <div>We are all about fashionable dance appearal that is also functionable.  We know that when you look better, you feel better.  So we have searched for the brands that are known to be tough and fashion forward.  We continue to be commited to being your source of durable and newwest trends that will last through your dancing days and every day use.  CHeck out our store page for a list of our great vendors.</div>
@@ -68,9 +70,9 @@
             <div id='social-media'>
                 Follow Us:<br/>
                 
-                Facebook
-                Twitter
-                Instagram
+                <a href=''><img src="https://img.icons8.com/windows/24/000000/facebook-new.png"/></a>
+                <a href=''><img src="https://img.icons8.com/small/16/000000/twitter-circled.png"/></a>
+                <a href=''><img src="https://img.icons8.com/windows/26/000000/instagram-new.png"/></a>
                 
             </div>
             <div id='hours'>hours
@@ -101,5 +103,10 @@
             <div id='legal'>Copyright © 2018 TOE THE LINE - All Rights Reserved.</div>
 
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <!-- <script src="../javascript/lightslider.js"></script> -->
+
+        <script src='../javascript/ttl.js'></script>
     </body>
 </html>

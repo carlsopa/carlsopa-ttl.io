@@ -4,47 +4,49 @@
         <meta charset="utf-8">
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <title>Toe The Line-Dancing Boutique</title>
-        <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive|Roboto&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet"><!--Font style for heading-->
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><!--Font style for text-->
         <link rel="stylesheet" href='../styles/web.css'>
         <link rel="stylesheet" href='../styles/menu.css'>
+        <!-- <link rel="stylesheet" href='../styles/a.css'> -->
     </head>
     <body>
         <div id='event'>
-            Current Promotion
+            Due to the current Novel Coreno-19 outbreak, we will be closed till further notice
         </div>
-        <header>
-            <div class='overlay'></div>
-            <div id='account'>My Account/Register</div>
-            <div id='banner'>
-                <div id='logo'>
-                    <img id='logoa' src='../images/Toe-The-Line-logo-transparent.png'/>
+        <div class="sticky">
+            <header>
+                <div id='account'>My Account/Register</div>
+                    <div id='logo'>
+                        <img id='logoa' src='../images/Toe-The-Line-logo-transparent.png'/>
+                    </div>
+                    <div class='contact' id='contact'>
+                        <span id='address'>302 McHenry Road, Buffalo Grove, Illinois 60089</span>
+                        <span id='phone'>(847) 353-8800</span>
+                        <span id='email'>info@dancingwithtoetheline.live</span>
+                    </div>
+                
+            </header>
+            <nav>
+                <input type="checkbox" name="" id="box">
+                <div class="hamburger"><div></div></div>
+                <div class="nav_bar action">
+                    <ul>
+                        <li class='mobile'><input type='text'></li>
+                        <li class='mobile'><a href='#'>Sign-up</a></li>
+                        <li class='mobile'><a href='#'>Login</a></li>
+                        <li class='Active_Link'><a href='index.html'>Home</a></li>
+                        <li><a href='#'>Shop</a></li>
+                        <li><a href='#'>Fitting Appointments</a></li>
+                        <li><a href='schools.html'>Dance Studios</a></li>
+                        <li><a href='about.html'>About Us</a></li>
+                        <li><a href='contact.html'>contact Us</a></li>
+                        <li><a href='photos.html'>Photography</a></li>
+                    </ul>
                 </div>
-                <div class='contact' id='contact'>
-                    <span id='address'>302 McHenry Road, Buffalo Grove, Illinois 60089</span><br/>
-                    <span id='phone'>(847) 353-8800</span><br/>
-                    <span id='email'>info@dancingwithtoetheline.live</span>
-                </div>
-            </div>
-        </header>
-        <nav>
-            <input type="checkbox" name="" id="box">
-            <div class="hamburger"><div></div></div>
-            <div class='nav_bar'>
-                <ul>
-                    <li class='mobile'><input type='text'></li>
-                    <li class='mobile'><a href='#'>Sign-up</a></li>
-                    <li class='mobile'><a href='#'>Login</a></li>
-                    <li><a href='index.html'>Home</a></li>
-                    <li><a href='#'>Shop</a></li>
-                    <li><a href='#'>Fitting Appointments</a></li>
-                    <li><a href='schools.html'>Dance Studios</a></li>
-                    <li><a href='about.html'>About Us</a></li>
-                    <li class='Active_Link'><a href='contact.html'>contact Us</a></li>
-                    <li><a href='#'>Photography</a></li>
-                </ul>
-            </div>
-        </nav>
-        <main>
+            </nav>
+        </div>
+        <main id='mainSection'>
             <div class='text-center'>Contact Us<br/>
             Do you have a question or comment for us?  We would love to hear from you.</div>
             <section>
@@ -63,7 +65,7 @@
             </section>
             <section>
             <div>Stop on by the store, we are always happy to see you</div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.618559637612!2d-87.96406828484572!3d42.158448679200895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbc42873738a9%3A0x90fec982eed8e2f7!2s302%20McHenry%20Rd%2C%20Buffalo%20Grove%2C%20IL%2060089!5e0!3m2!1sen!2sus!4v1584485464395!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe id='LocationMap' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2957.618559637612!2d-87.96406828484572!3d42.158448679200895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fbc42873738a9%3A0x90fec982eed8e2f7!2s302%20McHenry%20Rd%2C%20Buffalo%20Grove%2C%20IL%2060089!5e0!3m2!1sen!2sus!4v1584485464395!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
             </section>
             <section>
             <div>Give us a call<br/>
@@ -109,5 +111,10 @@
             <div id='legal'>Copyright © 2018 TOE THE LINE - All Rights Reserved.</div>
 
         </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+        <!-- <script src="../javascript/lightslider.js"></script> -->
+
+        <script src='../javascript/ttl.js'></script>
     </body>
 </html>
