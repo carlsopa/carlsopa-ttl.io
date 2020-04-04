@@ -326,7 +326,7 @@ footer {
   }
   #contact{
     display: flex;
-    justify-content: space-around;
+    /*! justify-content: space-around; */
     font-size: 1.06rem;
     font-weight: 900;
     margin: 0 auto;
@@ -335,6 +335,9 @@ footer {
     grid-column: 1/span 3;
     margin-top: -20px;
     margin-bottom: 20px;
+  }
+  #contact span{
+    margin:0px 2.7%;
   }
   section{
 /*     font-size: 1.3rem; */
