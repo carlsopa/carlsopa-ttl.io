@@ -21,8 +21,15 @@
                 <div class='modal-body'>
                     Sign up for our mailing list to keep up to date on the last sales and events that are offering at Toe The Line.
                     <form>
-                        <input type='text' id='FirstName' placeholder="First Name"/><input type='text' id='LastName' placeholder="Last Name"/>
-                        <input type='text' id='Email' placeholder="Email"/>
+                        <label id='FirstName'>First Name:
+                            <input type='text'  placeholder="First Name"/>
+                        </label>
+                        <label id='LastName'>Last Name:
+                            <input type='text'  placeholder="Last Name"/>
+                        </label>
+                        <label id='Email'>Email:
+                            <input type='email' placeholder="Email"/>
+                        </label>
                         <button id='SubmitButton'>Subscribe</button>
                     </form>
                 </div>
@@ -86,7 +93,7 @@
             <img src='../images/shop.png'/>
             <div class='SectionText'>While we pride ourselves on offer name brand products at unbeatable prices to ship cross country, at the end of the day we are your neighborhood brick and mortar dance store.  Being a neighborhood store we also pride ourselves on the connection that we have made with our local dance studios.  SO make sure to check out the community calendar of up-coming events as well as our dance school page to find out who is in the area and what they are doing.</div>
             </section>
-            <a id='SignupButton' href=''>Enroll for updates</a>
+            
             <section id='sales'>
                 <h2>Hot Buys</h2>
                 <div>
@@ -96,11 +103,16 @@
         </main>
         <footer>
             <div id='social-media'>
-                Follow Us:<br/>
-                
-                <a href=''><img src="https://img.icons8.com/windows/24/000000/facebook-new.png"/></a>
-                <a href=''><img src="https://img.icons8.com/small/16/000000/twitter-circled.png"/></a>
-                <a href=''><img src="https://img.icons8.com/windows/26/000000/instagram-new.png"/></a>
+                <div id='SubscribeLink'>
+                    Join the Toe The Line Family <a id='SignupButton'>Subscribe</a>
+                </div>
+                <div id='SocialMediaFollowing'>
+                    Follow Us:<br/>
+                    
+                    <a href=''><img src="https://img.icons8.com/windows/24/000000/facebook-new.png"/></a>
+                    <a href=''><img src="https://img.icons8.com/small/16/000000/twitter-circled.png"/></a>
+                    <a href=''><img src="https://img.icons8.com/windows/26/000000/instagram-new.png"/></a>
+                </div>
                 
             </div>
             <div id='hours'>hours

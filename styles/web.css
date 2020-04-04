@@ -125,15 +125,15 @@ section img {
 }
 /* 2BC) Contact button */
 #SignupButton{
-  position: relative;
-  text-decoration: none;
-  background-color:red;
-  color:burlywood;
+  /*! position: relative; */
+  /*! text-decoration: none; */
+  /*! background-color:red; */
+  /*! color:burlywood; */
   margin-top:10px;
-  padding:10px;
+  /*! padding:10px; */
   /*! width: 100%; */
-  left:29%;
-  border-radius: 50px;
+  /*! left:29%; */
+  /*! border-radius: 50px; */
   display: inline-block;
 }
 #SignupButton:hover{
@@ -246,10 +246,14 @@ footer {
 /*     font-size:1.3rem; */
   }
   .modal-body form{
+    margin-top:10px;
   display: grid;
   grid-template-rows: auto auto auto;
   grid-template-columns: auto auto;
     gap:15px;
+  }
+  form label{
+    font-size:.8rem;
   }
   #FirstName{
     grid-row:1;
@@ -296,6 +300,18 @@ footer {
   }
   #location-information{
 /*     font-size: 1.3rem; */
+  }
+  #social-media{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto;
+    justify-self: normal;
+  }
+  #SubscribeLink{
+    grid-column:1;
+  }
+  #SocialMediaFollowing{
+    grid-column:2;
   }
   #location-information span:after{
     content: '\A';
