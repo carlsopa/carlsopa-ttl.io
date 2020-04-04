@@ -15,6 +15,10 @@ h2{
   font-family: "sofia";
   color: rgb(150, 134, 235);
 }
+a{
+  color:rgb(120, 100, 222);
+  text-decoration: none;
+}
 #event{
   position: relative;
   z-index: 4;
@@ -318,6 +322,14 @@ footer {
     position: relative;
     left: 38%;
   }
+  .AccountForm > a{
+    text-decoration: none;
+    width:50%;
+    margin:0 auto;
+    position: relative;
+    left:40%;
+    display: inline-block;
+  }
   #logoa{
 /*     margin-left:0%; */
   }
@@ -339,6 +351,7 @@ footer {
   #contact span{
     margin:0px 2.7%;
   }
+  
   section{
 /*     font-size: 1.3rem; */
     line-height: 1.75rem;
