@@ -8,7 +8,6 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"><!--Font style for text-->
         <link rel="stylesheet" href='../styles/web.css'>
         <link rel="stylesheet" href='../styles/menu.css'>
-        <!-- <link rel="stylesheet" href='../styles/a.css'> -->
     </head>
     <body>
         <div class='modal' id='modal-email'>
@@ -17,17 +16,17 @@
                     <h2>Stay in-formed, sign up today</h2>
                     <a href='#modal-email' class='modal-close'>x</a>
                 </div>
-                <img src='../images/grayscale-photography-of-girl-doing-ballet-591679.jpg'/>
+                <img id='modal-image' src='../images/grayscale-photography-of-girl-doing-ballet-591679.jpg'/>
                 <div class='modal-body'>
                     Sign up for our mailing list to keep up to date on the last sales and events that are offering at Toe The Line.
-                    <form>
-                        <label id='FirstName'>First Name:
+                    <form class='AccountForm'>
+                        <label class='modal-form-label' id='FirstName'>First Name:
                             <input type='text'  placeholder="First Name"/>
                         </label>
-                        <label id='LastName'>Last Name:
+                        <label class='modal-form-label' id='LastName'>Last Name:
                             <input type='text'  placeholder="Last Name"/>
                         </label>
-                        <label id='Email'>Email:
+                        <label class='modal-form-label' id='Email'>Email:
                             <input type='email' placeholder="Email"/>
                         </label>
                         <button id='SubmitButton'>Subscribe</button>
@@ -40,7 +39,7 @@
         </div>
         <div class="sticky">
             <header>
-                <div id='account'><a href='login.html'>My Account</a>/<a href='#'>Register</a></div>
+                <div id='account'>My Account/Register</div>
                     <div id='logo'>
                         <img id='logoa' src='../images/Toe-The-Line-logo-transparent.png'/>
                     </div>
@@ -68,8 +67,8 @@
                 <div class="nav_bar action">
                     <ul>
                         <li class='mobile'><input type='text'></li>
-                        <li class='mobile'><a href='#'>Sign-up</a></li>
-                        <li class='mobile'><a href='#'>Login</a></li>
+                        <li class='mobile'><a href='signup.html'>Sign-up</a></li>
+                        <li class='mobile'><a href='login.html'>Login</a></li>
                         <li class='Active_Link'><a href='index.html'>Home</a></li>
                         <li><a href='#'>Shop</a></li>
                         <li><a href='#'>Fitting Appointments</a></li>
@@ -104,14 +103,14 @@
         <footer>
             <div id='social-media'>
                 <div id='SubscribeLink'>
-                    Join the Toe The Line Family <a id='SignupButton'>Subscribe</a>
+                Join the Toe The Line Family <a id='SignupButton'>Join Today!</a>
                 </div>
                 <div id='SocialMediaFollowing'>
-                    Follow Us:<br/>
-                    
-                    <a href=''><img src="https://img.icons8.com/windows/24/000000/facebook-new.png"/></a>
-                    <a href=''><img src="https://img.icons8.com/small/16/000000/twitter-circled.png"/></a>
-                    <a href=''><img src="https://img.icons8.com/windows/26/000000/instagram-new.png"/></a>
+                Follow Us:<br/>
+                
+                <a href=''><img src="https://img.icons8.com/windows/24/000000/facebook-new.png"/></a>
+                <a href=''><img src="https://img.icons8.com/small/16/000000/twitter-circled.png"/></a>
+                <a href=''><img src="https://img.icons8.com/windows/26/000000/instagram-new.png"/></a>
                 </div>
                 
             </div>

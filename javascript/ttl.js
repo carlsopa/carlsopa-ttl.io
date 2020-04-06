@@ -19,6 +19,7 @@ $(document).ready(function(){
         }
     })
 
+    console.log($('.modal-dialog').children('img').width());
     var DayOfWeek = new Date().getDay()
     $('#'+DayOfWeek).css('font-weight','900');
 
@@ -33,6 +34,7 @@ $(document).ready(function(){
             console.log($(this)[index])
             // x++;
         }
+
         // var schoolSection = $(el).prev();
         // var SchoolSectionHeight = schoolSection.height();
         // var childrenTop = -Math.abs(schoolSection.children('.School_About').position().top)
